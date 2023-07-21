@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
+@font-face {
+    font-family: 'Aeros';
+    src: url('./fonts/aeros-font/Aeros-rg5WA.ttf');
+}
+
+@font-face {
+    font-family: 'Aquire';
+    src: url('./fonts/aquire-font/Aquire-BW0ox.otf');
+}
+
+:root{
+    --fontLogo: 'Aquire';
+    --fontTitleSection: 'Aeros';
+    --fontPrincipal: 'Oxanium', cursive;
+
+    --colorNeonRojo1: rgba(255, 0, 0, 0.8);
+    --colorNeonRojo2: rgba(255, 0, 0, 0.4);
+    --colorNeonRojo3: rgba(255, 0, 0, 0.2);
+
+    --colorNeonAzul1: rgba(130, 217, 255, 0.8);;
+    --colorNeonAzul2: rgba(130, 217, 255, 0.4);;
+    --colorNeonAzul3: rgba(130, 217, 255, 0.2);;
+
+    --colorNeonTurquesa1: rgba(51, 233, 233, 0.8);
+    --colorNeonTurquesa2: rgba(51, 233, 233, 0.4);
+    --colorNeonTurquesa3: rgba(51, 233, 233, 0.2);
+
+    --colorNeonMorado1: rgba(204, 0, 255, 0.8);
+    --colorNeonMorado2: rgba(204, 0, 255, 0.4);
+    --colorNeonMorado3: rgba(204, 0, 255, 0.2);
+
+    --colorNeonVerde1: rgba(0, 255, 34, 0.8);
+    --colorNeonVerde2: rgba(0, 255, 34, 0.4);
+    --colorNeonVerde3: rgba(0, 255, 34, 0.2);
+
+    --colorNeonNaranja1: rgba(255, 153, 0, 0.8);
+    --colorNeonNaranja2: rgba(255, 153, 0, 0.4);
+    --colorNeonNaranja3: rgba(255, 153, 0, 0.2);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1E1E1E;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    /* background: #000; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 10;   
+    background: transparent;
+    box-shadow: -66.9000015258789px 66.9000015258789px 66.9000015258789px 0px rgba(255, 255, 255, 0.10) inset, 66.9000015258789px -66.9000015258789px 66.9000015258789px 0px rgba(0, 0, 0, 0.10) inset;
+    backdrop-filter: blur(66.9000015258789px);
+}
+
+.Logo{
+    font-family: var(--fontLogo);
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3.125rem;
+}
+
+.navbar > ul > li {
+    font-family: var(--fontTitleSection);
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    
+}
+.navbar > ul > li> a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar > ul > li:hover{
+    cursor: pointer;
+}
+main {
+    background: #000;
+}
+
+.animationHero{
+    width: 100%;
+}
+.hero > .heroText{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero > .heroText > span {
+    font-family: var(--fontTitleSection);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    color: #fff;
+    text-align: center;
+}
+
+.sectionGalery{
+    padding-left: 30px;
+}
+
+section > .titleSection {
+    font-family: var(--fontTitleSection);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.sectionAuthor{
+    padding-left: 30px;
+}
+
+footer{
+    background: #000;
+    width: 100%;
+}
+
+footer > p{
+    font-family: var(--fontTitleSection);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Popup */
+.PopUp-background{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-left: -3%;
+  background: #302f2f80;
+  position: fixed;
+  z-index: 20;
+}
+.PopUp{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.PopUp>span{
+  position: relative;
+  left:96%;
+}
+
+.PopUp--close{
+  display: none;
+}
+
+.close-button{
+  font-family: var(--fontTitleSection);
+  cursor: pointer;
+}
+
+/* Carrusel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  .carousel__slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+  
+  .carousel__slide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    gap: 20px;
+    color: white;
+  }
+  
+  .carousel__indicators {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .carousel__indicator {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel__indicator:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .carousel__indicator-icon {
+    font-size: 24px;
+    font-family: var(--fontLogo);
+    color: #fff;
+  }
+  
+  .carousel__indicator--left {
+    transform: rotate(90deg);
+  }
+  
+  .carousel__indicator--right {
+    transform: rotate(270deg);
+  }  
+
+  /* Contenido del articulo */
+  .postAnimation{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontPrincipal);
+    background: #1E1E1E;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    border-radius: 5px;
+    gap: 20px;
+  }
+  .dataAnimation{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  .animationPopUp{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* Author Section */
+
+  .authorContainer{
+    width: 18rem;
+    height: 18rem;
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+  }
+
+  .authorName{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .author{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-family: var(--fontPrincipal);
+  }
+
+  .authorIMG{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; /* Proporción cuadrada (1:1) */
+    object-fit: cover; /* Ajuste la imagen sin perder calidad */
+  }
+
+  img.authorIMG{
+    clip-path: circle(50% at center);
+  }
+
+
+.neon-circle--red{
+  --colorNeonRojo1: rgba(63, 81, 181, 0.8);
+  --colorNeonRojo2: rgba(63, 81, 181, 0.4);
+  --colorNeonRojo3: rgba(63, 81, 181, 0.2);
+}
+
+  /* Circulo de neon */
+  .neon-circle--red {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--colorNeon1);
+    position: relative;
+    box-shadow: 0 0 20px var(--colorNeonRojo1), 0 0 50px var(--colorNeonRojo2), 0 0 80px var(--colorNeonRojo3);
+    
+  }
+  
+  .neon-circle--red::before,
+  .neon-circle--red::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .neon-circle--red::before {
+    box-shadow: 0 0 20px var( --colorNeonRojo1), 0 0 50px var( --colorNeonRojo2), 0 0 80px var( --colorNeonRojo3);
+  }
+  
+  .neon-circle--red::after {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px var( --colorNeonRojo1), 0 0 50px var( --colorNeonRojo2), 0 0 80px var( --colorNeonRojo3);
+  }
+  
+
+  
+
+  /* Neon Azúl */
+  .neon-circle--blue {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px var(--colorNeonAzul1), 0 0 50px var(--colorNeonAzul2), 0 0 80px var(--colorNeonAzul3);
+  }
+  
+  .neon-circle--blue::before,
+  .neon-circle--blue::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .neon-circle--blue::before {
+    box-shadow: 0 0 20px var( --colorNeonAzul1), 0 0 50px var( --colorNeonAzul2), 0 0 80px var( --colorNeonAzul3);
+  }
+  
+  .neon-circle--blue::after {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px var( --colorNeonAzul1), 0 0 50px var( --colorNeonAzul2), 0 0 80px var( --colorNeonAzul3);
+  }
+
+  /* Neón turquesa */
+  
+  .neon-circle--turquoise {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px var(--colorNeonTurquesa1), 0 0 50px var(--colorNeonTurquesa2), 0 0 80px var(--colorNeonTurquesa3);
+  }
+  
+  .neon-circle--turquoise::before,
+  .neon-circle--turquoise::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .neon-circle--turquoise::before {
+    box-shadow: 0 0 20px var( --colorNeonTurquesa1), 0 0 50px var( --colorNeonTurquesa2), 0 0 80px var( --colorNeonTurquesa3);
+  }
+  
+  .neon-circle--turquoise::after {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px var( --colorNeonTurquesa1), 0 0 50px var( --colorNeonTurquesa2), 0 0 80px var( --colorNeonTurquesa3);
+  }
+
+  /* Neón Morado */
+
+  .neon-circle--purple {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px var(--colorNeonMorado1), 0 0 50px var(--colorNeonMorado2), 0 0 80px var(--colorNeonMorado3);
+  }
+  
+  .neon-circle--purple::before,
+  .neon-circle--purple::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .neon-circle--purple::before {
+    box-shadow: 0 0 20px var( --colorNeonMorado1), 0 0 50px var( --colorNeonMorado2), 0 0 80px var( --colorNeonMorado3);
+  }
+  
+  .neon-circle--purple::after {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px var( --colorNeonMorado1), 0 0 50px var( --colorNeonMorado2), 0 0 80px var( --colorNeonMorado3);
+  }
+
+  /* Neón Verde */
+
+  .neon-circle--green {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px var(--colorNeonVerde1), 0 0 50px var(--colorNeonVerde2), 0 0 80px var(--colorNeonVerde3);
+  }
+  
+  .neon-circle--green::before,
+  .neon-circle--green::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .neon-circle--green::before {
+    box-shadow: 0 0 20px var( --colorNeonVerde1), 0 0 50px var( --colorNeonVerde2), 0 0 80px var( --colorNeonVerde3);
+  }
+  
+  .neon-circle--green::after {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px var( --colorNeonVerde1), 0 0 50px var( --colorNeonVerde2), 0 0 80px var( --colorNeonVerde3);
+  }
+
+   /* Neón Orange */
+
+   .neon-circle--Orange {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px var(--colorNeonNaranja1), 0 0 50px var(--colorNeonNaranja2), 0 0 80px var(--colorNeonNaranja3);
+  }
+  
+  .neon-circle--Orange::before,
+  .neon-circle--Orange::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  
+  .neon-circle--Orange::before {
+    box-shadow: 0 0 20px var( --colorNeonNaranja1), 0 0 50px var( --colorNeonNaranja2), 0 0 80px var( --colorNeonNaranja3);
+  }
+  
+  .neon-circle--Orange::after {
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px var( --colorNeonNaranja1), 0 0 50px var( --colorNeonNaranja2), 0 0 80px var( --colorNeonNaranja3);
+  }

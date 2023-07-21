@@ -1,0 +1,460 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000000;
+  overflow: hidden;
+}
+.estre-container {
+  position: fixed;
+  top: 155px;
+  left: 140px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container1 {
+  position: fixed;
+  top: 50px;
+  left: 200;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container2 {
+  position: fixed;
+  top: 360px;
+  left: 850px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container3 {
+  position: fixed;
+  top: 260px;
+  left: 370px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container4 {
+  position: fixed;
+  top: 600px;
+  left: 650px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container5 {
+  position: fixed;
+  top: 150px;
+  left: 650px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container6 {
+  position: fixed;
+  top: 700px;
+  left: 190px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container7 {
+  position: fixed;
+  top: 80px;
+  left: 1100px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container8 {
+  position: fixed;
+  top: 250px;
+  left: 1200px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container9 {
+  position: fixed;
+  top: 700px;
+  left: 970px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container10 {
+  position: fixed;
+  top: 500px;
+  left: 1050px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container11 {
+  position: fixed;
+  top: 540px;
+  left: 420px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container12 {
+  position: fixed;
+  top: 390px;
+  left: 160px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container13 {
+  position: fixed;
+  top: 180px;
+  left: 920px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container14 {
+  position: fixed;
+  top: 720px;
+  left: 600px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container15 {
+  position: fixed;
+  top: 550px;
+  left: 875px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container16 {
+  position: fixed;
+  top: 110px;
+  left: 350px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container17 {
+  position: fixed;
+  top: 90px;
+  left: 800px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre-container18 {
+  position: fixed;
+  top: 300px;
+  left: 1000px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.estre {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+.estre1 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 3s infinite;
+}
+.estre2 {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 4s infinite;
+}
+.estre3 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+.estre4 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 3s infinite;
+}
+.estre5 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 4s infinite;
+}
+.estre6 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+.estre7 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 3s infinite;
+}
+.estre8 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 4s infinite;
+}
+.estre9 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+.estre10 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 3s infinite;
+}
+.estre11 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 4s infinite;
+}
+.estre12 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+.estre13 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 3s infinite;
+}
+.estre14 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 4s infinite;
+}
+.estre15 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+.estre16 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 3s infinite;
+}
+.estre17 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 4s infinite;
+}
+.estre18 {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0; 
+  animation: parpa 2s infinite;
+}
+
+.planeta {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: relative;
+  background: #c25447;
+  box-shadow: inset -30px -30px 0px #bf4d3f;
+  overflow: hidden;
+}
+
+.planeta:before {
+  content: "";
+  border-radius: 100%;
+  width: 12%;
+  height: 12%;
+  display: block;
+  margin: 10% 30%;
+  position: absolute;
+  background: #b84a3d;
+  box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.planeta:after {
+  content: "";
+  border-radius: 100%;
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin: 50% 35%;
+  position: absolute;
+  background: #b4483c;
+  box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.meteoro {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  animation-name: meteoro;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform: rotate(-40deg);
+  animation-iteration-count: infinite;
+}
+.meteoro-roca {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  animation-name: roca-meteoro;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  box-shadow: 0px 0px 10px white;
+}
+.meteoro-dest {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 100px;
+  height: 8px;
+  background: linear-gradient(
+    140deg,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  background: linear-gradient(
+    310deg,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(0deg);
+  animation-duration: 0.2s;
+  animation-name: dest-meteoro;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+}
+
+@keyframes roca-meteoro {
+  from {
+    background-color: #9505e3;
+  }
+  to {
+    background-color: #a16ae8;
+  }
+}
+@keyframes dest-meteoro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes meteoro {
+  0% {
+    right: 500;
+    top: 0px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    right: 1500px;
+    top: 1100px;
+    opacity: 0;
+  }
+}
+@keyframes parpa {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

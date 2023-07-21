@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorAnimacionGalaxia {
+    background-color: #031635ff;
+    position: relative;
+    z-index: -99;
+    width: 100%;
+    /* Si no aparece poner el height en 100% */
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contenedorFondo,
+.contenedorEstrellas {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -99;
+}
+
+.fondo,
+.estrellasFondo,
+.fondoPolvoEstelar {
+    width: 200%;
+    height: 100%;
+    filter: saturate(100%);
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fondo {
+    background-image: url('../img/estrellitasFondo.svg');
+    background-repeat: repeat-x;
+    filter: drop-shadow(0px 0px 15px #ffffff);
+    animation-name: moverFondo;
+}
+
+.estrellasFondo {
+    background-image: url('../img/estrellasV2.svg');
+    background-repeat: repeat-x;
+    animation-name: moverFondo;
+}
+
+.contenedorGalaxia {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/galaxiaCentral.svg');
+    width: 40%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: girarGalaxia 160s infinite linear, brilloGalaxia 3s infinite alternate-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estrellaCalaxia {
+    background-image: url('../img/estrellasGalaxia.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    animation: girarGalaxia 100s infinite linear, estrellasGalaxiaBrillo 2s infinite linear alternate-reverse;
+    overflow: hidden;
+}
+
+.fondoPolvoEstelar {
+    background-image: url('../img/fondoPolvo.svg');
+    background-repeat: repeat-x;
+    width: 200%;
+    height: 100%;
+    filter: saturate(100%);
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: moverFondo;
+}
+
+.ContenedorFondoPolvoEstelar {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -99;
+}
+
+@keyframes moverFondo {
+    0% {
+        transform: translateX(-1.5%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes girarGalaxia {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes estrellasGalaxiaBrillo {
+    0% {
+        filter: drop-shadow(0px 0px 5px #ffffff);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px #bb2020);
+    }
+}
+
+@keyframes brilloGalaxia {
+    0% {
+        filter: drop-shadow(4px 4px 60px #d4d4d4);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 90px #757575);
+    }
+}
+
+
+
+.prueba{
+    width: 90%;
+    height: 80vh;
+}

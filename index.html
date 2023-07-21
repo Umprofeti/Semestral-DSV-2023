@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ASTROS</title>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <span class="Logo">ASTROS</span>
+        <!-- Nav -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a>Inicio</a>
+                </li>
+                <li>
+                    <a href="#galeria">Galería</a>
+                </li>
+                <li>
+                    <a href="#author">Autores</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <!-- Hero -->
+       <div class="hero">
+           <iframe width="100%" height="650" class="animationHero" src="./animaciones/warpz.html" frameborder="0"></iframe>
+           <div class="heroText">
+                <span>Descubre las maravillas animadas del cosmos</span>
+           </div>
+        </div>
+        <!-- Galería -->
+        <section class="sectionGalery">
+            <h2 class="titleSection" id="galeria">Galería</h2>
+            <!-- Popup -->
+            <div class="PopUp-background PopUp--close" id="popup">
+                <div class="PopUp">
+                    <span class="close-button" id="closePopUp-Btn">X</span>
+                    <div id="displayInfo">
+                        <!-- Content Animation by JS -->
+                    </div>
+                </div>
+            </div>
+            <!-- Carrusel -->
+            <div class="carousel">
+                    <div class="carousel__slides">
+                      <div class="carousel__slide">
+                        <article class="postAnimation">
+                            <iframe width="100%" class="animationHero" src="./animaciones/warpz.html" frameborder="0"></iframe>
+                            <div class="dataAnimation">
+                                <span>Viaje estelar: Explorando el infinito</span>
+                                <a class="animationPopUp">Más Información</a>
+                            </div>
+                        </article>
+                        <article class="postAnimation">
+                            <iframe width="100%" class="animationHero" src="./animaciones/ProSemestral/index.html" frameborder="0"></iframe>
+                            <div class="dataAnimation">
+                                <span>Esplendor galáctico</span>
+                                <a class="animationPopUp">Más Información</a>
+                            </div>
+                        </article>
+                        <article class="postAnimation">
+                            <iframe width="100%" class="animationHero" src="./animaciones/Abdel/planeta.html" frameborder="0"></iframe>
+                            <div class="dataAnimation">
+                                <span>El Asteroide Fugaz</span>
+                                <a class="animationPopUp">Más Información</a>
+                            </div>
+                        </article>
+                      </div>
+                      <div class="carousel__slide">
+                        <article class="postAnimation">
+
+                        </article>
+                        <article class="postAnimation">
+
+                        </article>
+                        <article class="postAnimation">
+
+                        </article>
+                      </div>
+                      <div class="carousel__slide">
+                        <h1>Slide 3</h1>
+                      </div>
+                    </div>
+                
+                    <div class="carousel__indicators">
+                      <div class="carousel__indicator  carousel__indicator--right">
+                        <span class="carousel__indicator-icon">A</span>
+                      </div>
+                      <div class="carousel__indicator  carousel__indicator--left">
+                        <span class="carousel__indicator-icon">A</span>
+                      </div>
+                    </div>
+                  </div>           
+        </section>
+        <!-- Autores -->
+        <section class="sectionAuthor">
+            <h2 class="titleSection" id="author">Autores</h2>
+            <!-- Autores -->
+            <div class="authorContainer">
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--red">
+                        <img class="authorIMG" loading="lazy" src="./public/author_IMG/Jonathan.jpg" />
+                    </div>
+                    <p class="author">Jonathan Rodríguez</p>
+                </div>
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--blue">
+                        <img class="authorIMG" loading="lazy" src="./public/author_IMG/FotoEric.png" />
+                    </div>
+                    <p class="author">Eric Soto</p>
+                </div>
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--turquoise">
+                        <img class="authorIMG" loading="lazy" src="./public/author_IMG/jose.jpeg" />
+                    </div>
+                    <p class="author">José García</p>
+                </div>
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--purple">
+                        <img loading="lazy" src="./public/author_IMG/" />
+                    </div>
+                    <p class="author">Oscar Villamarín</p>
+                </div>
+                
+            </div>
+            <div class="authorContainer">
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--green">
+                        <img loading="lazy" src="./public/author_IMG/" />
+                    </div>
+                    <p class="author">Abdel Lasso</p>
+                </div>
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--Orange">
+                        <img loading="lazy" src="./public/author_IMG/" />
+                    </div>
+                    <p class="author">Rashet Macías</p>
+                </div>
+                <div class="authorName">
+                    <div class="neon-circle neon-circle--blue">
+                        <img loading="lazy" src="./public/author_IMG/" />
+                    </div>
+                    <p class="author">Orlando Morales</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>proyecto semestral dsv-2023</p>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
