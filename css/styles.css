@@ -176,6 +176,7 @@ footer > p{
   display: flex;
   flex-direction: column;
   width: 85%;
+  height: 60vh;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -507,4 +508,44 @@ footer > p{
     top: 5px;
     left: 5px;
     box-shadow: 0 0 20px var( --colorNeonNaranja1), 0 0 50px var( --colorNeonNaranja2), 0 0 80px var( --colorNeonNaranja3);
+  }
+
+  /* Post */
+  main.post{
+    background: #fff; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .post-title{
+    font-family: var(--fontPrincipal);
+    font-size: 1.5rem;
+  }
+  iframe.post-animate{
+    margin: 0;
+    max-width: 450px;
+    height: auto;
+  }
+
+  div.animationWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  p.description-post{
+    font-family: var(--fontPrincipal);
+    margin-top: 15px;
+    text-align: justify;
+  }
+  a.post-link{
+    text-decoration: none;
+    font-family: var(--fontPrincipal);
+    color: #1E1E1E;
+  }
+  a.post-link:hover{
+    color: #000;
   }

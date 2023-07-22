@@ -49,13 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
           contentPopup.src = rutesIframe[id]
           contentPopup.frameBorder = "0"
           contentPopup.width = "100%"
+          contentPopup.height = "350vh"
+          contentPopup.style = "width: 100%;"
           contentPopup.id= "contentPopup"
           displayIframe.appendChild(contentPopup);
       })
     })
 
     
-   
+   /* Funciones dentro del IFRAME del popup */
+
+  
 
   });
   
