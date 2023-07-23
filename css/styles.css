@@ -112,6 +112,7 @@ main {
 
 .animationHero{
     width: 100%;
+    overflow: hidden;
 }
 .hero > .heroText{
     width: 100%;
@@ -270,6 +271,7 @@ footer > p{
     padding: 1.5rem 1rem 1.5rem 1rem;
     border-radius: 5px;
     gap: 20px;
+    overflow: hidden;
   }
   .dataAnimation{
     display: flex;
