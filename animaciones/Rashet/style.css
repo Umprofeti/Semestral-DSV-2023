@@ -5,12 +5,12 @@
   padding: 0;
 }
 body {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: -webkit-radial-gradient(#808080, #800080);
+  background: -webkit-radial-gradient(#808080, #000000);
 }
 .container span {
   font-size: 120pt;
@@ -30,7 +30,8 @@ body {
   content: var(--l);
   position: absolute;
   height: 200%;
-  width: 300px;
+  max-width: 300px;
+  min-width: 150px;
   top: 80%;
   left: 0;
   filter: blur(30px);
@@ -53,4 +54,10 @@ body {
 }
 .container span:nth-child(5) {
   color: #bb00ff;
+}
+
+@media screen and (max-width: 450px) {
+  .container span{
+    font-size: 3rem;
+  }
 }

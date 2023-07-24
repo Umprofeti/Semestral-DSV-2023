@@ -1,9 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+ /* Deshabilita la animacion de carga */
+ window.onload= () => {
+  const loader = document.getElementById("loader");
+  loader.style.display = 'none';
+ }
+ 
+ document.addEventListener('DOMContentLoaded', function() {
     const slidesContainer = document.querySelector('.carousel__slides');
     const sliderWith = document.querySelectorAll('.carousel__slide');
     const leftIndicator = document.querySelector('.carousel__indicator--left');
     const rightIndicator = document.querySelector('.carousel__indicator--right');
-  
     let currentIndex = 0;
     const slideWidth = slidesContainer.clientWidth;
     const numSlides = slidesContainer.children.length;
